@@ -1,0 +1,45 @@
+.en{
+     display: none;
+     width: fit-content;
+     height: fit-content;
+     margin-top: -8vh;
+     padding: 10px;
+     border-radius: 15px;
+     margin-right: 3px;
+     margin-left: 90.5vw;
+     z-index: 99;
+     position: fixed;
+ }
+ .en.open{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: goldenrod;
+ }
+ .en ul{
+      list-style: none;
+ }
+ .en ul li{
+     margin-top: 1vh;
+ }
+ .en ul li button{
+      color: white;
+      background-color: black;
+      padding: 3px;
+      border-radius: 5px;
+      transition: 0.4s ease-in-out;
+ }
+ .en ul li button:hover{
+      background-color: white;
+      color: black;
+ }
+ .en ul li button a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+ }
+ .en ul li button a:hover{
+      color: black;
+ }

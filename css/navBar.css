@@ -1,0 +1,37 @@
+nav 
+{
+    display: flex;
+    height: 17%;
+    width: 95.5%;
+    margin: 0px;
+    margin-top: -10%;
+    background-color: goldenrod;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 50px;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 100;
+    
+}
+nav .logo
+{
+    color: #f80000;
+    font-weight: 600px;
+    margin-left: -40px;
+    border: red;
+    fill:aquamarine;
+}
+.title{
+    margin: auto;
+    margin-left: -15%;
+    color: rgb(255, 0, 144);
+    font-size: 40pt;
+}
+#lang_menu{
+    display: none;
+}
+.en.open{
+    display: block;
+}
+

@@ -1,0 +1,68 @@
+.horizontal_menu{
+    margin-left: 1%;
+    padding: 10px;
+}
+.horizontal_menu ul 
+{
+    list-style-type: none;
+    margin: 0px;
+    margin-left: -10%;
+    padding: 15px;
+    display: block;
+    border-radius: 15px;
+}
+.horizontal_menu ul li 
+{
+    float: left;
+    margin: 0.5%;
+    padding: 10px;
+    display: inline;
+    color: white;
+    font-weight: bolder;
+    border-radius: 15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+}
+.horizontal_menu ul li a{
+    color:white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+}
+.horizontal_menu ul li a:hover,.active{
+    color: rgb(0, 0, 0);
+    transition: 0.1s;
+    opacity: 0.8;
+}
+.horizontal_menu button
+{
+    border-radius: 15px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    padding: 3px;
+    width: max-content;
+}
+.horizontal_menu button:hover
+{
+    opacity: 0.8;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    fill-opacity: 0.8;
+}
+.horizontal_menu button:active
+{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+@media(max-width: 900px){
+    .horizontal_menu{
+        display: none;
+    }
+    .horizontal_menu ul{
+        display: none;
+    }
+}

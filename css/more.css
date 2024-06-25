@@ -1,0 +1,203 @@
+*{
+     padding: 0;
+     margin: 0;
+ }
+ h1
+ {
+     color:goldenrod;
+     font-size: 72pt;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-weight:900;
+     position: center;
+     text-align:center;
+     margin-top: 0px;
+     margin-bottom: -20px;
+ }
+ h2
+ {
+     color: whitesmoke;
+     font-size: 26pt;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight:600;
+     padding:30px;
+     text-align: center;
+ }
+ h3
+ {
+     color: whitesmoke;
+     font-size: 20pt;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-weight:300;
+ }
+ .products{
+    margin-top: 15vh;
+ }
+ .en{
+   display: none;
+   width: fit-content;
+   height: fit-content;
+   margin-top: -5vh;
+   padding: 10px;
+   border-radius: 15px;
+   margin-right: 4%;
+   margin-left: 93%;
+   z-index: 99;
+   position: absolute;
+}
+.en.open{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background-color: goldenrod;
+}
+.en ul{
+    list-style: none;
+}
+.en li{
+   margin-top: 7px;
+}
+.en li button{
+    color: white;
+    background-color: black;
+    padding: 3px;
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+.en li button:hover{
+    background-color: white;
+    color: black;
+}
+.en li button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+.en li button a:hover{
+    color: black;
+}
+ .bidhaa
+ {
+   background-color:rgb(69, 0, 73);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    width: 75%;
+    height: fit-content;
+    margin:auto;
+    padding: 1%;
+    text-align: center;
+ }
+ .mpya
+ {
+   background-color:rgb(69, 0, 73);
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     border: 5px solid rgb(255, 191, 73);
+     margin-top: 2%;
+     padding: 10px;
+     margin-left: 10px;
+     margin-right: 10px;
+     height: max-content;
+     color: darkblue;
+ }
+ .table{
+    margin-top: 2%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    column-gap: 1vw;
+ }
+ .table form{
+   margin: 0;
+   padding: 0;
+   background-color:rgb(69, 0, 73);
+   border-radius: 20px;
+   cursor: pointer;
+   margin-top: 2vh;
+ }
+ .table form button{
+   margin: 0;
+   padding: 0px;
+   background-color: rgba(218, 165, 32, 0);
+   border: 1px solid goldenrod;
+   border-radius: 20px;
+ }
+ .table form button:hover{
+   border: 1px solid rgb(0, 68, 255);
+ }
+ .table form button img{
+   border: 2px solid goldenrod;
+   cursor: pointer;
+ }
+ .table form button img:hover{
+    border: 2px solid rgb(0, 68, 255);
+ }
+ p{
+    margin-left: 2%;
+ }
+ p.video-intro{
+    text-align: center;
+    font-size: 20pt;
+ }
+ .mpya button{
+    padding: 5px;
+    border-radius: 10px;
+ }
+ .mpya button.videos{
+    background-color: blueviolet;
+    border: 3px solid red;
+ }
+ .mpya button.videos a{
+    text-decoration: none;
+    color: red;
+    font-size: 14pt;
+ }
+ .mpya button.videos:hover{
+    zoom: 101%;
+    background-color: white;
+    border: 5px solid black;
+    color: black;
+    transition: 0.3s ease-in-out;
+ }
+ .mpya button.videos:active{
+    zoom: 103%;
+    rotate: 360deg;
+    transition: 0.3s;
+ }
+ .wasiliana-nasi
+ {
+     margin: auto;
+     width: 60%;
+     color: rgb(27, 3, 132);
+     background-color: aquamarine;
+     font-size: 14pt;
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     padding: 10px;
+     margin-top: 5%;
+     text-align: center;
+ }
+ @media (max-width: 800px){
+   .products{
+       margin-top: 15vh;
+       padding-top: 5vh;
+   }
+   .table p{
+      margin-top: 5%;
+   }
+   .bidhaa{
+      margin-bottom: 2vh;
+   }
+}
+@media(max-width: 600px){
+   .table{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+   }
+}

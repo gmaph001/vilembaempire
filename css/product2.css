@@ -1,0 +1,138 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: 0;
+     transition: all 0.5s ease-in-out;
+}
+body{
+     background-color: rgb(154, 111, 4);
+     height: 100vh;
+}
+.body{
+     padding: 25vh 30vw 25vh 30vw;
+}
+.form{
+     margin: auto;
+     background-color:rgb(69, 0, 73);
+     border: 5px solid rgb(255, 191, 73);
+     color: white;
+     border-radius: 20px;
+     padding: 5%;
+     font-size: 14pt;
+     font-family: Candara;
+}
+.logo{
+     width: 100px;
+     height: 100px;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     border-radius: 50%;
+     border: 3px solid rgb(255, 191, 73);
+}
+.contents{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     border: 3px solid rgb(255, 191, 73);
+     padding: 2%;
+     border-radius: 30px;
+     margin: 2vh 0 2vh 0;
+}
+.labels{
+     width: 50%;
+     display: flex;
+     align-items: left;
+     flex-direction: column;
+     justify-content: center;
+     padding-top: 7vh;
+}
+.inputs{
+     width: 50%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+}
+input{
+     margin-top: 1vh;
+     padding: 2px 5px 2px 5px;
+     font-size: 14pt;
+     font-weight: bold;
+     font-family: 'Times New Roman', Times, serif;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 20px;
+     background-color: aliceblue;
+     width: 15vw;
+     color: black;
+     text-align: center;
+}
+#alert1, #alert2, #alert3{
+     color: red;
+     font-size: 08pt;
+     font-family: candara;
+}
+label{
+     padding: 5px;
+}
+#newprod{
+     background-color: black;
+     margin: auto;
+     color: white;
+     padding: 5px;
+     border-radius: 15px;
+     cursor: pointer;
+     transition: 0.3s ease-in-out;
+     font-weight: bold;
+     border: 2px solid orange;
+}
+#newprod:hover{
+     color: black;
+     background-color: goldenrod;
+     border: 2px solid black;
+}
+.radio{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 50%;
+     padding: 0;
+}
+.response{
+     background-color: green;
+     color: white;
+     font-family: candara;
+     padding: 5%;
+     font-size: 16pt;
+     font-weight: bold;
+     border: 3px solid rgb(255, 191, 73);
+     text-align: center;
+     border-radius: 30px;
+}
+.response a{
+     color: white;
+     background-color: black;
+     padding: 5px;
+     border: 2px solid rgb(255, 191, 73);
+     border-radius: 15px;
+     transition: 0.3s ease-in-out;
+     text-decoration: none;
+     margin-top: 5vh;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.response a:hover{
+     color: black;
+     background-color: goldenrod;
+     border: 2px solid black;
+}
+@media(max-width: 920px){
+     .body{
+          padding: 25vh 3vw 25vh 3vw;
+     }
+     input{
+          width: 35vw;
+     }
+     .radio{
+          width: 30vw;
+          margin-left: -10vw;
+     }
+}

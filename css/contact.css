@@ -1,0 +1,133 @@
+*{
+     margin: 0px;
+     padding: 0px;
+ }
+ .body{
+     margin-top: 15vh;
+     padding: 2%;
+     background-color: rgb(154, 111, 4);
+ }
+ .form
+ {
+     margin: auto;
+     text-align: left;
+     padding: 15px;
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     border: 5px solid rgb(255, 191, 73);
+     background-color: rgb(120, 30, 115);
+     font-size: 16pt;
+     font-family: Candara;
+     width: 70%;
+     color: white;
+ }
+ input{
+     padding: 5px;
+     border: 1px solid rgb(0, 0, 0);
+     border-radius: 10px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+ textarea{
+     padding: 10px;
+     border: 2px solid black;
+     border-radius: 15px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ fieldset{
+     padding: 10px;
+     border: 3px solid rgb(0, 0, 0);
+     border-radius: 10px;
+ }
+ legend{
+    color: rgb(255, 0, 0);
+ }
+ #namefield{
+     font-size: 12pt;
+     color: red;
+ }
+ #numberfield{
+     font-size: 12pt;
+     color: red;
+ }
+ #emailfield{
+     font-size: 12pt;
+     color: red;
+ }
+ .submit
+ {
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     background-color: rgb(0, 0, 0);
+     color: white;
+     cursor: pointer;
+     transition: 0.2s;
+     padding: 5px;
+ }
+ .submit:hover
+ {
+     opacity: 0.8;
+     background-color: rgb(255, 249, 249);
+     color: rgb(0, 0, 0);
+ }
+ .submit:active
+ {
+     background-color: rgb(102, 0, 255);
+     color: rgb(0, 255, 17);
+ }
+ .wasiliana-nasi{
+     margin: auto;
+     width: 500px;
+     color: rgb(255, 255, 255);
+     background-color:rgb(69, 0, 73);
+     border: 5px solid rgb(255, 191, 73);
+     font-size: 14pt;
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     padding: 10px;
+     margin-top: 5%;
+     text-align: center;
+ }
+ .iconset{
+    padding: 0 0 0 3vw;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ @media (max-width: 800px){
+     nav{
+         display: flex;
+         height: max-content;
+         width: fit-content;
+         background-color: goldenrod;
+         align-items: center;
+         flex-direction: column;
+         justify-content: center;
+         margin-top: -5vh;
+         z-index: 100;
+         position: fixed;
+         flex-wrap: wrap;
+         width: 94vw;
+         height: max-content;
+         padding-top: 2%;
+     }
+     .body{
+         margin-top: 15vh;
+         padding: 5vh 2vw 2vh 2vw;
+
+     }
+     .form{
+         font-size: 16pt;
+         font-family: 'Times New Roman', Times, serif;
+         width: 85vw;
+     }
+     .wasiliana-nasi{
+         width: 85vw;
+     }
+     .iconset{
+        width: 80vw;
+     }
+ }

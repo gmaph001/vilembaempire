@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VILEMBA EMPIRE-Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css\navBar2.css">
+    <link rel="stylesheet" type="text/css" href="css\menu.css">
+    <link rel="stylesheet" type="text/css" href="css\contact.css">
+    <link rel="stylesheet" type="text/css" href="css\lang.css">
+    <link rel="stylesheet" type="text/css" href="css\icon.css">
+    <link rel="icon" type="image/x-icon" href="media\icons\pic1.png">
+</head>
+<body>
+        <div class="nav">
+            <img src="media\images\pic1.png" class="logo">
+            <div class="title">
+                <b>VILEMBA EMPIRE</b>
+            </div>
+            <div class="horizontal_menu">
+                <ul>
+                    <li><button><a href="index.php">Home</a></button></li>
+                    <li><button><a href="blog.html">Our blog</a></button></li>
+                    <li><button><a href="about_us.html">About us</a></button></li>
+                    <li><button><a href="contact.html">Contacts</a></button></li>
+                    <li><button><a href="more.php">Agiza</a></button></li>
+                    <li class="language"><button><b>En</b></button></li>
+                </ul>
+            </div>
+            <div class="drop_downMenu">
+                <ul>
+                    <li class="menu4dropdown"><button><b>Menu</b></button></li>
+                </ul>
+            </div>
+            <div class="drp">
+                <center>
+                    <ul class="dropdown">
+                        <li><button><a href="index.php">Home</a></button></li>
+                        <li><button><a href="blog.html">Our blog</a></button></li>
+                        <li><button><a href="about_us.html">About us</a></button></li>
+                        <li><button><a href="contact.html">Contacts</a></button></li>
+                        <li><button><a href="more.php">Agiza</a></button></li>
+                        <li><button><a href="contact.html">Swahili</a></button></li>
+                        <li><button><a href="contact.html">English</a></button></li>
+                    </ul>
+                </center>
+            </div>
+        </div>
+        <div class="body">
+        <div class="en" id="lang_menu">
+                <ul>
+                    <li><button><a href="contact.html">Swahili</a></button></li>
+                    <li><button><a href="contact.html">English</a></button></li>
+                </ul>
+            </div>
+            <div class="form">
+                <form action="https://formspree.io/f/mnqkkdgz" method="post" name="myform" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend><b>FILL OUT THE INFORMATION(JAZA DATA ZAKO):</b></legend>
+                        <b>NAME(JINA):</b> <input type="text" placeholder="name" id="name" name="my-name"><br><br>
+                        <b>EMAIL(BARUA-PEPE):</b> <input type="email" id="email" type="email"
+                            placeholder="example@domain.com" name="email"><br><br>
+                        <b>PHONE NUMBER(NAMBA YA SIMU):</b> <input type="number" name="phone_number" id="numb"
+                            placeholder="0xxxxxx" maxlength="10"><br><br>
+                        <b>SUGGESTIONS (MAELEZO):</b><br><textarea cols="30" rows="5" name="maelezo"></textarea><br><br>
+                        <button onclick="myFunction()" class="submit"><b>Submit</b></button>
+                    </fieldset>
+                </form>
+                <script type="text/javascript">
+                    function myFunction() {
+                        let y = document.getElementById("name").value
+                        if (y > 0 || y < 0 || y == 0) {
+                            alert("Please provide name in alphabets!");
+                            event.preventDefault();
+                        }
+                        let x = document.getElementById("numb").value
+                        if (isNaN(x) || x < 600000000 || x >= 800000000) {
+                            alert("The Phone number is not valid!");
+                            event.preventDefault();
+                        }
+                        let z= document.getElementById("email").value
+                        if( z>0 || z<0 || z == 0){
+                            alert("Please provide your email!");
+                            event.preventDefault();
+                        }
+                        if(document.myform.maelezo.value==""){
+                            alert("Please enter any suggestions to submit the form.");
+                            event.preventDefault();
+                        }
+                    }
+                </script>
+            </div>
+            <div class="wasiliana-nasi">
+                <p><b>Kwa maelezo zaidi, wasiliana nasi kupitia mitandao ifuatayo ya kijamii:</b></p>
+                <p style="color: goldenrod"><b>For more information, contact us via the following social media:</b></p>
+                <div class="iconset">
+                    <div class="instagram">
+                        <a href="https://instagram.com/vilembaempire01" target="blank"><img src="media\icons\instagram.jpg"
+                                height="30px" width="30px"></a>
+                    </div>
+                    <div class="gmail">
+                        <a href="mailto:happynessluoga0@gmail.com"><img src="media\icons\Gmail.jpg" height="25px"
+                                width="30px"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="https://facebook.com/Vilemba Empire" target="blank"><img src="media\icons\facebook.jpg"
+                                height="30px" width="30px"></a>
+                    </div>
+                    <div class="whatsapp">
+                        <a href="https://wa.me/255692645259" target="_blank"><img src="media\icons\whatsapp.jpeg" height="30px" width="30px" style="border-radius: 50%;"></a>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+255692645259" target="_blank"><img src="media\icons\phone.png" height="30px"
+                         width="30px"></a>
+                    </div>
+                </div><br>
+                <p style="font-size: 18pt; text-align: center; color: red;">
+                    <b><a href="tel:+255692645259" style="text-decoration: none; color: red;">Tel No: +255-692-645-259</a></b>
+                </p>
+            </div>
+        </div>
+        <div class="chat">
+            <center>
+                <a href="sms:+255692645259"><img src="media\icons\chat.png" width="30px" height="30px"></a>
+            </center>
+        </div>
+        <script src="js/navBar.js"></script>
+</body>
+
+</html>

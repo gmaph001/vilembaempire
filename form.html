@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="css/product2.css">
+     <link rel="icon" type="image/x-icon" href="media\icons\pic1.png">
+     <title>Bidhaa</title>
+</head>
+<body>
+     <div class="main">
+          <div class="body">
+               <div class="form">
+                    <form method="POST" name="add" action="form.php" enctype="multipart/form-data">
+                         <center><img src="media\images\pic1.png" class="logo"></center>
+                         <div class="contents">
+                              <div class="labels">
+                                   <label><b>JINA LA BIDHAA: </b></label>
+                                   <p id="alert1" class="alert"></p><br>
+                                   <label><b>BEI YA BIDHAA: </b></label>
+                                   <p id="alert2" class="alert"></p><br>
+                                   <label><b>BIDHAA: </b></label>
+                                   <p id="alert3" class="alert"></p><br>
+                                   <label><b>Je, unataka iwe sample?</b></label><br>
+                                   <p id="alert3" class="alert"></p><br>
+                              </div>
+                              <div class="inputs">
+                                   <input type="text" name="jina" id="name"><br>
+                                   <input type="number" name="bei" id="price"><br>
+                                   <input type="file" name="bidhaa" id="product"><br>
+                                   <div class="radio">
+                                        <label><b>Ndio</b></label>
+                                        <input type="checkbox" name="type" value="sample">
+                                        <label><b>Hapana</b></label>
+                                        <input type="checkbox" name="type" value="product"><br>
+                                   </div>
+                              </div>
+                         </div>
+                         <center><button onclick="tuma()" name="upload" id="newprod">ONGEZA BIDHAA</button></center>
+                    </form>
+                    <script>
+                         function tuma(){
+
+                              let alert = "*Tafadhali jaza nafasi hii!*";
+
+                              if(document.add.jina.value == ""){
+                                   document.getElementById("alert1").innerHTML = alert;
+                                   event.preventDefault();
+                              }
+                              if(document.add.bei.value == ""){
+                                   document.getElementById("alert2").innerHTML = alert;
+                                   event.preventDefault();
+                              }
+                              if(document.add.bidhaa.value == ""){
+                                   document.getElementById("alert3").innerHTML = alert;
+                                   event.preventDefault();
+                              }
+                         }
+                    </script>
+               </div>
+          </div>
+     </div>
+</body>
+</html>

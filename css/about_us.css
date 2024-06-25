@@ -1,0 +1,88 @@
+.body{
+     margin-top: 15vh;
+}
+.map{
+     height: 800px;
+     width: 75%;
+     margin: auto;
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     background-color:rgb(69, 0, 73);
+     text-align: center;
+     padding: 2%;
+     border: 51px solid goldenrod;
+}
+.gmap{
+     border-radius: 30px;
+     border: 3px solid goldenrod;
+}
+.en{
+     display: none;
+     width: fit-content;
+     height: fit-content;
+     margin-top: -8vh;
+     padding: 10px;
+     border-radius: 15px;
+     margin-right: 5%;
+     margin-left: 81%;
+     z-index: 99;
+     position: fixed;
+ }
+ .en.open{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: goldenrod;
+ }
+ .en ul{
+      list-style: none;
+ }
+ .en li{
+     margin-top: 7px;
+ }
+ .en li button{
+      color: white;
+      background-color: black;
+      padding: 3px;
+      border-radius: 5px;
+      transition: 0.4s ease-in-out;
+ }
+ .en li button:hover{
+      background-color: white;
+      color: black;
+ }
+ .en li button a{
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.4s ease-in-out;
+ }
+ .en li button a:hover{
+      color: black;
+ }
+ h3{
+     color: whitesmoke;
+     font-size: 20pt;
+     font-family:Georgia, 'Times New Roman', Times, serif;
+     font-weight:300;
+}
+@media (max-width: 800px){
+     .body{
+          padding: 5vh 2vw 2vh 2vw;
+     }
+     .map{
+          height: 75vh;
+          width: 75%;
+          border-radius: 10px;
+          -moz-border-radius: 10px;
+          -webkit-border-radius: 10px;
+          background-color:rgb(69, 0, 73);
+          text-align: center;
+          padding: 2%;
+     }
+     .gmap{
+          height: 58vh;
+     }
+ }

@@ -1,0 +1,146 @@
+.footer
+{
+    background-color: goldenrod;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 0%;
+    margin-right: 0%;
+    color: black;
+    padding: 10px;
+    font-size: 18pt;
+    text-align: center;
+    -ms-text-kashida-space: 1.5;
+    font-family:'Times New Roman', Times, serif;
+    height: max-content;
+    width: 98.7%;
+}
+.icons
+{
+    text-align: justify;
+    width: 200px;
+    height: 45px;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.instagram
+{
+    margin:auto;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+.instagram:hover,
+ .instagram img:hover{
+     height: 35px;
+     width: 35px;
+ }
+.facebook
+{
+    margin:auto;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+.facebook:hover,
+ .facebook img:hover{
+     height: 35px;
+     width: 35px;
+ }
+.gmail
+{
+    margin:auto;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+.gmail:hover,
+ .gmail img:hover{
+     height: 35px;
+     width: 35px;
+ }
+.whatsapp
+{
+    margin:auto;
+    border-radius:10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 5px;
+    transition: 0.3s ease-in-out;
+}
+.whatsapp:hover,
+ .whatsapp img:hover{
+     height: 35px;
+     width: 35px;
+ }
+.phone
+ {
+     margin:auto;
+     border-radius:10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     height: 30px;
+     width: 30px;
+     background-color: white;
+     margin-top: 5px;
+     padding: 5px;
+     transition: 0.3s ease-in-out;
+ }
+ .phone:hover,
+ .phone img:hover{
+     height: 35px;
+     width: 35px;
+ }
+.chat{
+    width: 35px;
+    height: 35px;
+    padding: 7px;
+    margin-left: 94vw;
+    bottom: 7vh;
+    z-index: 99;
+    background-color: whitesmoke;
+    position: fixed;
+    border-radius: 20px;
+    animation: chat 2s ease normal both;
+}
+@keyframes chat{
+    from{
+        transform: translatey(-75vh);
+    }
+    to{
+        transform: translateY(0vh);
+    }
+}
+@media(max-width: 850px){
+    .footer{
+        width: 94.5vw;
+    }
+    .chat{
+        margin-left: 86vw;
+    }
+}
