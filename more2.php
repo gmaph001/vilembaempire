@@ -109,11 +109,11 @@
                     &copy; <b><i>Vilemba Empire! Pendeza nasi!!!</i></b>
                 </p>
                 </div>
-            <div class="chat">
-                <center>
-                    <a href="sms:+255692645259"><img src="media\icons\chat.png" width="30px" height="30px"></a>
-                </center>
-            </div>
+                <div class="chat">
+                    <center>
+                        <a href="sms:+255692645259"><img src="media\icons\message.png" width="30px" height="30px"></a>
+                    </center>
+                </div>
             <script src="js/navBar.js"></script>
         </body>
     </html>
